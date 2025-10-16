@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Troq</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="home-slider">
+        <!-- Form container -->
+        <div class="form-container">
+            <h1 class="title"> TROQ </h1>
+            <p class="subtitle">Qual a sua  oferta de venda ou troca!</p>
+            <div class="auth-links">
+                <a href="/login.html" class="auth-link">Login</a>
+                <a href="/index.html" class="auth-link">Cadastro</a>
+            </div>
+            <div id="message" class="message"></div>
+            <form id="offer-form" class="signup-form">
+                <div class="input-group">
+                    <input type="text" id="search" name="search" placeholder="O que você busca hoje?">
+                </div>
+                <input type="hidden" id="offer-type" name="offer-type" value="0">
+                <!-- Swiper for offer types -->
+                <div class="swiper offer-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide offer-slide" data-offer="0">
+                            <div class="offer-item">
+                                <img class="icon" src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/tag.svg" alt="vender icon"/>
+                                <span class="name">Vender</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide offer-slide" data-offer="1">
+                            <div class="offer-item">
+                                <img class="icon" src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/arrows-rotate.svg" alt="trocar icon"/>
+                                <span class="name">Trocar</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide offer-slide" data-offer="2">
+                            <div class="offer-item">
+                                <img class="icon" src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/briefcase.svg" alt="serviço icon"/>
+                                <span class="name">Serviço</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide offer-slide" data-offer="3">
+                            <div class="offer-item">
+                                <img class="icon" src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/cart-shopping.svg" alt="comprar icon"/>
+                                <span class="name">Comprar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <button type="submit" class="signup-button">Publicar Oferta </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

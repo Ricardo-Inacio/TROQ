@@ -1,0 +1,5 @@
+- [ ] Install Swiper library via npm
+- [ ] Update dashboard.html to implement Swiper structure with subject slides
+- [ ] Update style.css to style the swiper slides and subject items
+- [ ] Update script.js to initialize Swiper
+- [ ] Test the slider functionality
